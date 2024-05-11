@@ -4,7 +4,6 @@ import { RouterProvider, createRoutesFromElements, createBrowserRouter, Route } 
 
 import "./main.css";
 
-import App from "./App.jsx";
 import Root from "./routes/Root.jsx";
 import Index from "./routes/Index.jsx";
 import Category from "./routes/Category.jsx";
