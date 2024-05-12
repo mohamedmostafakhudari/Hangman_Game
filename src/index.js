@@ -9,6 +9,8 @@ import Index from "./routes/Index.jsx";
 import Category from "./routes/Category.jsx";
 import Game from "./routes/Game.jsx";
 
+import { loader as wordsLoader } from "./routes/Game.jsx";
+
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route
@@ -25,6 +27,7 @@ const router = createBrowserRouter(
 			/>
 			<Route
 				path="game"
+				loader={wordsLoader}
 				element={<Game />}
 			/>
 		</Route>

@@ -16,7 +16,7 @@ const Menu = ({ onGuideOpen }) => {
 		<dialog
 			open
 			ref={dialogRef}
-			className="relative flex flex-col duration-700 ease-in-out bg-[#1D140B] rounded-lg w-80 p-12 min-h-[648px] md:min-h-[768px] md:w-full md:max-w-screen-sm"
+			className="relative flex flex-col duration-700 ease-in-out bg-[#1D140B] rounded-lg w-80 p-12 h-[min(648px,65vh)] md:h-[min(768px,80vh)] md:w-full md:max-w-screen-sm"
 		>
 			<GameTitle />
 			<div className="flex-1 grid place-items-center">
@@ -33,7 +33,7 @@ const Menu = ({ onGuideOpen }) => {
 					<div className="absolute duration-300 ease-in-out top-0 left-1/2 -translate-x-1/2 translate-y-full w-32 aspect-square rounded-full bg-green-800 pointer-events-none md:w-48 group-hover:translate-y-0"></div>
 				</button>
 			</div>
-			<div className="flex items-center justify-center pb-16">
+			<div className="flex items-center justify-center pb-0">
 				<button
 					onClick={onGuideOpen}
 					className="bg-[#757C19] text-white font-bold p-6 py-2 rounded-full text-xl md:px-12 md:py-4 md:text-3xl"
